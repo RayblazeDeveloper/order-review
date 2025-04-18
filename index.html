@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+
+    <link href="./assets/css/boxwood.css" rel="stylesheet" />
+
+    <title>Order Review</title>
+  </head>
+  <body>
+    <header class="fixed-top w-100">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <a class="navbar-brand mr-auto mr-lg-0" href="#"
+          ><img src="./assets/images/logo.svg" alt="Boxwood Means"
+        /></a>
+        <button
+          class="navbar-toggler p-0 border-0"
+          type="button"
+          data-toggle="offcanvas"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="navbar-collapse offcanvas-collapse justify-content-end"
+          id="navbar"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">BXADMIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">LOGOUT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid bg-white sub_nav">
+        <div class="row">
+          <div class="col border-right">
+            <strong class="text-green">#509623</strong>
+            <p class="m-0">
+              Last edited by, <strong class="text-green">Ben Stephen</strong>
+            </p>
+          </div>
+          <div class="col-md-auto border-right">
+            <strong
+              >Boxwood FieldSmart Sales & Income, Order
+              Rhy_NC_28137_509623</strong
+            >
+            <p class="m-0">1100 lake woodlands dr the woodlands tx 77380</p>
+          </div>
+          <div class="col border-right text-center">
+            <strong class="text-green">Inspection ID #9823233</strong>
+          </div>
+          <div class="col-md-auto d-flex align-items-center gap-3">
+            <a href="#" class="btn nav_action_btn">
+              <img src="assets/images/map.svg" alt="Map" />
+              <span>Birds Eye Image</span>
+            </a>
+            <a href="#" class="btn nav_action_btn">
+              <img src="assets/images/pdf.svg" alt="PDF" />
+              <span>Bank PDF</span>
+            </a>
+            <a href="#" class="btn unsure_btn">
+              <span>Unsure Off</span>
+            </a>
+            <a href="#" class="btn edit_btn">Edit</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="d-md-block bg-light sidebar collapse">
+            <div class="sidebar-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <img src="assets/images/subject-property-info.svg" alt="" />
+                    <span>Subject Property Info</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/report-details.svg" alt="" />
+                    <span>Report Details</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/manage-property-type.svg" alt="" />
+                    <span>Manage Property Type</span>
+                  </a>
+                </li>
+              </ul>
+
+              <h6 class="sidebar-heading text-blue">Sales Approach</h6>
+              <hr />
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/local-library.svg" alt="" />
+                    <span>Sales Comps</span>
+                    <span class="counter bg-blue">5</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/rss-feed.svg" alt="" />
+                    <span>Listings</span>
+                    <span class="counter bg-blue">3</span>
+                  </a>
+                </li>
+              </ul>
+
+              <h6 class="sidebar-heading text-orange">Income Approach</h6>
+              <hr />
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/local-library.svg" alt="" />
+                    <span>Rental Comps</span>
+                    <span class="counter bg-orange">5</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/rss-feed.svg" alt="" />
+                    <span>Direct Cap</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/local-library.svg" alt="" />
+                    <span>Valuation</span>
+                  </a>
+                </li>
+              </ul>
+
+              <h6 class="sidebar-heading text-orange">Other informations</h6>
+              <hr />
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/local-library.svg" alt="" />
+                    <span>Recent, Similar & Nearby Orders</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/rss-feed.svg" alt="" />
+                    <span>Possible Reorders</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/local-library.svg" alt="" />
+                    <span>Order History</span>
+                  </a>
+                </li>
+              </ul>
+
+              <h6 class="sidebar-heading text-orange">Tools</h6>
+              <hr />
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/local-library.svg" alt="" />
+                    <span>Plat Map</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/local-library.svg" alt="" />
+                    <span>QA Measures</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/local-library.svg" alt="" />
+                    <span>Tools</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/local-library.svg" alt="" />
+                    <span>Location Map</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="assets/images/local-library.svg" alt="" />
+                    <span>Uploaded Documents</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <section class="ml-sm-auto main">
+            <div class="detail-card">
+              <h3 class="main-heading">Order Details</h3>
+              <div class="card">
+                <div class="row">
+                  <div class="col">
+                    <h4>Boxwood Order No</h4>
+                    <p>Rhy_NC_28137_509623</p>
+                  </div>
+                  <div class="col">
+                    <h4>Project No</h4>
+                    <p>7626712</p>
+                  </div>
+                  <div class="col">
+                    <h4>Dept Code</h4>
+                    <p>DT55</p>
+                  </div>
+                  <div class="col">
+                    <h4>Client Company</h4>
+                    <p>First Citizen Bank</p>
+                  </div>
+                  <div class="col">
+                    <h4>Borrower Name</h4>
+                    <p>George Matt</p>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col">
+                    <h4>Boxwood Order No</h4>
+                    <p>Rhy_NC_28137_509623</p>
+                  </div>
+                  <div class="col">
+                    <h4>Project No</h4>
+                    <p>7626712</p>
+                  </div>
+                  <div class="col">
+                    <h4>Dept Code</h4>
+                    <p>DT55</p>
+                  </div>
+                  <div class="col"></div>
+                  <div class="col"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer-36"></div>
+
+            <div class="detail-card">
+              <h3 class="main-heading">Address Details</h3>
+              <div class="card">
+                <div class="row">
+                  <div class="col">
+                    <h4>Property Name</h4>
+                    <p>AP/3242</p>
+                  </div>
+                  <div class="col">
+                    <h4>Street Address</h4>
+                    <p>1100 Lake Woodlands</p>
+                  </div>
+                  <div class="col">
+                    <h4>Street Address 2</h4>
+                    <p>34th Avenue</p>
+                  </div>
+                  <div class="col">
+                    <h4>Unit Number</h4>
+                    <p>34</p>
+                  </div>
+                  <div class="col">
+                    <h4>City</h4>
+                    <p>The Woodlands</p>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col">
+                    <h4>State</h4>
+                    <p>North Carolina</p>
+                  </div>
+                  <div class="col">
+                    <h4>County</h4>
+                    <p>Woodlands</p>
+                  </div>
+                  <div class="col">
+                    <h4>Zipcode</h4>
+                    <p>254333</p>
+                  </div>
+                  <div class="col-5">
+                    <h4>Address from Inspector</h4>
+                    <p>1100 Lake Woodlands-test Order Spring, TX 77380</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer-36"></div>
+
+            <div class="detail-card">
+              <h3 class="main-heading">Property Details</h3>
+              <div class="card">
+                <div class="row">
+                  <div class="col">
+                    <h4>Gross Bldg SF From Client/To Inspector</h4>
+                    <p>7000</p>
+                  </div>
+                  <div class="col">
+                    <h4>Displayed on Report</h4>
+                    <p>7000</p>
+                  </div>
+                  <div class="col">
+                    <h4>No of Buildings From Client/To Inspector</h4>
+                    <p>34th Avenue</p>
+                  </div>
+                  <div class="col">
+                    <h4>Displayed on Report</h4>
+                    <p>34</p>
+                  </div>
+                  <div class="col">
+                    <h4>Year Built</h4>
+                    <p>1990</p>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col">
+                    <h4>Number of. Units</h4>
+                    <p>2</p>
+                  </div>
+                  <div class="col">
+                    <h4>No of Floors</h4>
+                    <p>2</p>
+                  </div>
+                  <div class="col">
+                    <h4>Assessed Value</h4>
+                    <p>254333</p>
+                  </div>
+                  <div class="col">
+                    <h4>Lot Size</h4>
+                    <p>12000</p>
+                  </div>
+                  <div class="col">
+                    <h4>Client Entered Zoning</h4>
+                    <p>Test Zone</p>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col">
+                    <h4>Currently Listed for Sale</h4>
+                    <p>2</p>
+                  </div>
+                  <div class="col">
+                    <h4>Listed Price</h4>
+                    <p>2</p>
+                  </div>
+                  <div class="col">
+                    <h4>Days on Market</h4>
+                    <p>254333</p>
+                  </div>
+                  <div class="col"></div>
+                  <div class="col"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer-36"></div>
+
+            <div class="detail-card">
+              <h3 class="main-heading">Evaluation Details</h3>
+              <div class="card">
+                <div class="row">
+                  <div class="col">
+                    <h4>Purpose of Evaluation/Appraisal</h4>
+                    <p>7000</p>
+                  </div>
+                  <div class="col">
+                    <h4>Unit of Measure</h4>
+                    <p>7000</p>
+                  </div>
+                  <div class="col">
+                    <h4>Valuation Type</h4>
+                    <p>34th Avenue</p>
+                  </div>
+                  <div class="col">
+                    <h4>Property Rights Evaluated</h4>
+                    <p>34</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer-36"></div>
+
+            <div class="detail-card">
+              <h3 class="main-heading">Instructions</h3>
+              <div class="card">
+                <div class="row">
+                  <div class="col">
+                    <h4>Was a Highest and Best Use analysis developed?</h4>
+                    <p>7000</p>
+                  </div>
+                  <div class="col">
+                    <h4>
+                      Were any extraordinary assumptions applied in the
+                      appraisal?:
+                    </h4>
+                    <p>7000</p>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col-6">
+                    <h4>Were Any Hypothetical Conditions Considered?</h4>
+                    <p>2</p>
+                  </div>
+                  <div class="col-6">
+                    <h4>Include Remaining Economic Life - Building 1?</h4>
+                    <p>2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer-36"></div>
+
+            <div class="detail-card">
+              <h3 class="main-heading">Boilerplate</h3>
+              <div class="card">
+                <div class="row">
+                  <div class="col-12">
+                    <h4>Significant Assistance Provided By:</h4>
+                    <p>michaell taylor and Rachel Cortez</p>
+                  </div>
+                  <div class="spacer-28 col-12"></div>
+                  <div class="col-12">
+                    <h4>Significant Assistance Comment:</h4>
+                    <p>
+                      michaell taylor and Rachel Cortez provided significant
+                      real property valuation assistance to the person signing
+                      this certification.
+                    </p>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col-12">
+                    <h4>Additional Comments on Assistance:</h4>
+                    <p>
+                      It is not typically utilised by market participants in
+                      buy/sell decisions. Based on the above, the Cost Approach
+                      was not considered relevant. The agreed upon Scope of Work
+                      is to rely on the Sales.
+                    </p>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col-12">
+                    <h4>Methodologies Developed or Omitted:</h4>
+                    <p>
+                      Although the Income Capitalization Approach may be
+                      relevant to the subject property, it has been omitted for
+                      this analysis. The Income Capitalization Approach would be
+                      considered a secondary supporting analysis and its
+                      omission does not have a material effect on the resulting
+                      value of the subject property. The cost approach is
+                      typically employed on new or nearly new improvements due
+                      to the difficulty in estimating accrued depreciation.
+                      Furthermore, it is not typically utilized by market
+                      participants in buy/sell decisions. Based on the above,
+                      the Cost Approach was not considered relevant. The agreed
+                      upon Scope of Work is to rely on the Sales Comparison
+                      Approach only which will provide a credible result.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/boxwood.js"></script>
+  </body>
+</html>
