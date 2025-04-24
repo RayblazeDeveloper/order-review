@@ -186,6 +186,18 @@ header {
   z-index: 999;
 }
 
+.min-h-half-card {
+  min-height: calc(100% - 50% - 11px);
+  border: 2px solid #dc900d;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.min-h-half-card .card {
+  height: 100%;
+  border: 0px solid #dc900d !important;
+  border-radius: 0px !important;
+}
+
 .btn-toggle-container {
   display: flex;
   align-items: center;
@@ -576,5 +588,84 @@ header {
   .gap-32 {
     column-gap: 12px;
     row-gap: 32px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .row {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 0;
+  }
+  .main {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+  .gap-32 {
+    column-gap: 12px;
+    row-gap: 32px;
+  }
+  .p-24-32 {
+    padding: 24px 16px;
+  }
+  .gap-4 {
+    gap: 1.2rem !important;
+  }
+
+  .sub_nav .col {
+    width: 100%;
+    max-width: unset !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .fixed-top {
+    position: static !important;
+  }
+
+  .main {
+    padding-top: 32px;
+    width: 100%;
+    max-width: calc(100%);
+    background-color: #008998;
+    min-height: calc(100vh - 93.67px);
+  }
+
+  .detail-card .row {
+    margin: 0;
+    padding: 19px 24px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .order_action {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .order_action span {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .qa-measures {
+    margin-top: 22px;
+  }
+  .qa-measures .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .mobile-spacing {
+    gap: 22px;
+    margin-top: 22px;
+  }
+  .mobile-spacing .detail-card {
+    margin-bottom: 22px;
+  }
+
+  .detail-card .card {
+    overflow: hidden;
+  }
+
+  .mobile-mt-22 {
+    margin-top: 22px;
   }
 }
