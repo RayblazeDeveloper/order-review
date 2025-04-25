@@ -392,7 +392,7 @@ header {
   padding-top: 0.5rem;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  padding: 22px 32px 62px 23px;
+  padding: 22px 32px 150px 23px;
 }
 
 .sidebar-sticky::-webkit-scrollbar {
@@ -466,7 +466,7 @@ header {
   width: 100%;
   max-width: calc(100% - 303px);
   background-color: #008998;
-  min-height: calc(100vh - 93.67px);
+  min-height: calc(100vh);
 }
 
 .detail-card .main-heading {
@@ -549,6 +549,19 @@ header {
   letter-spacing: 0%;
   text-transform: uppercase;
 }
+
+/***********/
+.visible-row {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .address-detail-card.detail-card .row .col {
+    max-width: 20% !important;
+    flex: unset !important;
+  }
+}
+/***********/
 
 @media (max-width: 767.98px) {
   .sidebar {
