@@ -40,6 +40,10 @@ $(function () {
       if ($target.length) {
         $target.show();
 
+        // Make sure all form elements and children inside the target are visible
+        $target.find("select, input, checkbox, label").show();
+        $target.find(".row, .col").show();
+
         // If the target is inside a row, we need to show the row but hide other elements in the row
         if ($target.parents(".row").length) {
           // Show all parent containers up to .main
@@ -53,7 +57,7 @@ $(function () {
 
               $(`#${$target.attr("id")} .spacer-22`).css("display", "block");
 
-              // Hide all direct children of the row
+              // Hide all direct children of the row, except elements inside #manage-property-type
               $(this)
                 .children()
                 .each(function () {

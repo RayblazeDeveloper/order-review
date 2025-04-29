@@ -110,7 +110,7 @@
             <div class="sidebar-sticky pt-3">
               <ul class="nav flex-column" id="main-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">
+                  <a class="nav-link active" href="#subject-property-info">
                     <img src="assets/images/subject-property-info.svg" alt="" />
                     <span>Subject Property Info</span>
                   </a>
@@ -122,7 +122,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <a class="nav-link" href="#manage-property-type">
                     <img src="assets/images/manage-property-type.svg" alt="" />
                     <span>Manage Property Type</span>
                   </a>
@@ -473,6 +473,180 @@
                   <div class="col-6">
                     <h4>Include Remaining Economic Life - Building 1?</h4>
                     <p>2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer-36"></div>
+
+            <div class="detail-card table" id="subject-property-info">
+              <h3 class="main-heading">Subject Property Info</h3>
+              <div class="card">
+                <div class="row header_row">
+                  <div class="col">
+                    <h4>Property Type</h4>
+                  </div>
+                  <div class="col">
+                    <h4>Property Subtype</h4>
+                  </div>
+                  <div class="col">
+                    <h4>Tertiary Type</h4>
+                  </div>
+                  <div class="col">
+                    <h4>Rental Scenario</h4>
+                  </div>
+                  <div class="col">
+                    <h4>Unit of Comarison <br />Rental Grids</h4>
+                  </div>
+                  <div class="col">
+                    <h4 class="text-center">Use as Primary</h4>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <p>Retail</p>
+                  </div>
+                  <div class="col">
+                    <p>Retail with Aprtments</p>
+                  </div>
+                  <div class="col">
+                    <p></p>
+                  </div>
+                  <div class="col">
+                    <p>Retail</p>
+                  </div>
+                  <div class="col">
+                    <p>Rent/SF per year</p>
+                  </div>
+                  <div class="col">
+                    <p class="text-center">✅</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <p>Industrial</p>
+                  </div>
+                  <div class="col">
+                    <p>Flex Space</p>
+                  </div>
+                  <div class="col">
+                    <p></p>
+                  </div>
+                  <div class="col">
+                    <p></p>
+                  </div>
+                  <div class="col">
+                    <p>Rent/SF per year</p>
+                  </div>
+                  <div class="col">
+                    <p></p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <p>Multifamily</p>
+                  </div>
+                  <div class="col">
+                    <p>Duplex/Triplex/Fourplex</p>
+                  </div>
+                  <div class="col">
+                    <p></p>
+                  </div>
+                  <div class="col">
+                    <p>Office</p>
+                  </div>
+                  <div class="col">
+                    <p>Rent/SF per year</p>
+                  </div>
+                  <div class="col">
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer-36"></div>
+
+            <div class="detail-card table" id="manage-property-type">
+              <h3 class="main-heading">Manage Property Types</h3>
+              <div class="card">
+                <div class="row header_row">
+                  <div class="col">
+                    <h4>Property Type</h4>
+                  </div>
+                  <div class="col">
+                    <h4>Property Subtype</h4>
+                  </div>
+                  <div class="col">
+                    <h4>Tertiary Type</h4>
+                  </div>
+                  <div class="col">
+                    <h4>Rental Scenario</h4>
+                  </div>
+                  <div class="col">
+                    <h4>Unit of Comarison <br />(Rental Grids)</h4>
+                  </div>
+                  <div class="col">
+                    <h4 class="text-center">Use as Primary</h4>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <select
+                      name="select-property-type"
+                      id="select-property-type"
+                    >
+                      <option value="">Select an Option</option>
+                      <option value="retail">Retail</option>
+                      <option value="industrial">Industrial</option>
+                      <option value="multifamily">Multifamily</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select
+                      name="select-property-subtype"
+                      id="select-property-subtype"
+                    >
+                      <option value="">Select an Option</option>
+                      <option value="retail-with-apartments">
+                        Retail with Apartments
+                      </option>
+                      <option value="flex-space">Flex Space</option>
+                      <option value="duplex-triplex-fourplex">
+                        Duplex/Triplex/Fourplex
+                      </option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select name="tertiary-type" id="tertiary-type" disabled>
+                      <option value=""></option>
+                      <option value="retail">Option 1</option>
+                      <option value="industrial">Option 2</option>
+                      <option value="multifamily">Option 3</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select name="rental-scenario" id="rental-scenario">
+                      <option value="">Select an Option</option>
+                      <option value="retail-with-apartments">Retail</option>
+                      <option value="office">Office</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select name="rental-grids" id="rental-grids">
+                      <option value="">Select an Option</option>
+                      <option value="rent-sf-per-year">Rent/SF per year</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label class="primary-checkbox" for="primary">
+                      <input type="checkbox" name="primary" id="primary" />
+                    </label>
                   </div>
                 </div>
               </div>

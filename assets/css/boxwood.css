@@ -290,6 +290,49 @@ header {
   transition: 0.3s ease all;
 }
 
+/* Primary Checkbox */
+.primary-checkbox {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+  margin-top: 4px;
+}
+.primary-checkbox input[type="checkbox"] {
+  position: relative;
+  border: 2px solid var(--bm-blue);
+  border-radius: 2px;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+  outline: 0;
+  padding: 0 !important;
+  vertical-align: text-top;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+}
+.primary-checkbox input[type="checkbox"]:hover {
+  opacity: 1;
+}
+.primary-checkbox input[type="checkbox"]:checked {
+  background-color: var(--bm-green);
+  border-color: var(--bm-green);
+  opacity: 1;
+}
+.primary-checkbox input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 6px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
+}
+
 /* Sub Nav Styles */
 .sub_nav {
   padding: 19px 22px;
@@ -491,10 +534,10 @@ header {
   margin: 0;
   padding: 19px 24px;
 }
-.detail-card .row .col,
+/* .detail-card .row .col,
 .detail-card .row [class^="col-"] {
   padding: 0;
-}
+} */
 .detail-card .card .row h4 {
   font-family: "Source Sans 3", sans-serif;
   font-size: 14px;
@@ -524,6 +567,22 @@ header {
 }
 .detail-card.table .row.header_row {
   border-bottom: 2px solid var(--bm-orange);
+}
+.detail-card.table .row:not(.header_row) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.detail-card select {
+  width: 100%;
+  border: 1px solid var(--bm-border);
+  padding: 5px;
+}
+.detail-card select:focus {
+  outline: 1px solid var(--bm-orange);
+}
+.detail-card select:disabled {
+  background-color: var(--bm-border);
 }
 
 .order_action {
