@@ -3,7 +3,7 @@
   --bm-orange: #dc900d;
   --bm-green: #62b200;
   --bm-teal: #008998;
-  --bm-border: #ebebeb;
+  --bm-border: #dadada;
 }
 
 html,
@@ -105,6 +105,10 @@ button:focus,
   font-size: 14px;
 }
 
+.fs-xs {
+  font-size: 12px;
+}
+
 .leading-200 {
   line-height: 200%;
 }
@@ -201,12 +205,12 @@ header {
 .btn-toggle-container {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 
 .btn-toggle-container span {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 150%;
   letter-spacing: 0%;
   color: #575757;
@@ -251,7 +255,7 @@ header {
 
 .btn-toggle-container .btn-bg {
   width: 100%;
-  background-color: #ebf7fc;
+  background-color: var(--bm-border);
   transition: 0.3s ease all;
   z-index: 1;
 }
@@ -269,7 +273,7 @@ header {
   text-align: center;
   line-height: 1;
   padding: 9px 4px;
-  background-color: var(--bm-blue);
+  background-color: #fff;
   border-radius: 50%;
   transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
@@ -607,6 +611,10 @@ header {
   line-height: 150%;
   letter-spacing: 0%;
   text-transform: uppercase;
+}
+
+.min-w-btn {
+  min-width: 170px;
 }
 
 /***********/
