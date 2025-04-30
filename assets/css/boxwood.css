@@ -237,6 +237,9 @@ header {
 .btn-toggle-container .btn-toggle > .btn-bg {
   border-radius: 100px;
 }
+.btn-toggle-container.checkin-checkout-toggle .btn-toggle > .btn-bg {
+  border-radius: 100%;
+}
 
 .btn-toggle-container .checkbox {
   position: relative;
@@ -277,15 +280,47 @@ header {
   border-radius: 50%;
   transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
+.btn-toggle-container.checkin-checkout-toggle .btn-toggle .knob:after {
+  content: "In";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 
 .btn-toggle-container .btn-toggle .checkbox:checked + .knob:before {
   content: "";
   left: 30px;
   background-color: var(--bm-green);
 }
+.btn-toggle-container.checkin-checkout-toggle
+  .btn-toggle
+  .checkbox:checked
+  + .knob:before {
+  content: "";
+  left: 30px;
+  background-color: #eeeeee;
+}
+.btn-toggle-container.checkin-checkout-toggle
+  .btn-toggle
+  .checkbox:checked
+  + .knob:after {
+  content: "Out";
+  right: 24px;
+  color: #fff;
+}
 
 .btn-toggle-container .btn-toggle .checkbox:checked ~ .btn-bg {
   background-color: #62b2002b;
+}
+.btn-toggle-container.checkin-checkout-toggle
+  .btn-toggle
+  .checkbox:checked
+  ~ .btn-bg {
+  background-color: var(--bm-green);
 }
 
 .btn-toggle-container .btn-toggle .knob,
@@ -359,34 +394,41 @@ header {
 }
 
 .nav_action_btn {
-  padding: 9px 15px;
+  padding: 9px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  column-gap: 10px;
-  border: 1px solid #e5e5e5;
+  column-gap: 8px;
+  border: 1px solid #e5e5e5 !important;
   border-radius: 0;
 
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   color: #444444;
   font-family: "Source Sans 3", sans-serif;
 }
+.nav_action_btn:hover {
+  background-color: #e8e8e8;
+}
 
 .edit_btn {
-  padding: 9px 18px;
+  padding: 9px 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   column-gap: 10px;
-  border: 1px solid var(--bm-teal);
-  background-color: var(--bm-teal);
+  border: 1px solid var(--bm-teal) !important;
+  background-color: var(--bm-teal) !important;
   border-radius: 0;
 
   font-size: 14px;
   font-weight: bold;
-  color: #ffffff;
+  color: #ffffff !important;
   font-family: "Source Sans 3", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.edit_btn:hover {
+  opacity: 0.8;
 }
 
 .unsure_btn {
@@ -528,8 +570,8 @@ header {
 }
 
 .detail-card .card {
-  border: 2px solid #dc900d;
-  border-radius: 4px;
+  border: 4px solid #dc900d;
+  border-radius: 16px;
 }
 .detail-card .card hr {
   margin: 0;

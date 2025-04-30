@@ -73,7 +73,16 @@
 
       <div class="container-fluid bg-white sub_nav">
         <div class="row">
-          <div class="col border-end"></div>
+          <div class="col border-end d-flex align-items-center">
+            <div class="btn-toggle-container checkin-checkout-toggle">
+              <span>Check In/Check out :</span>
+              <div class="btn-toggle">
+                <input type="checkbox" class="checkbox" checked />
+                <div class="knob"></div>
+                <div class="btn-bg"></div>
+              </div>
+            </div>
+          </div>
           <div class="col border-end">
             <strong class="fs-sm"
               >Boxwood FieldSmart Sales & Income, Order
@@ -96,6 +105,9 @@
             <a href="#" class="btn nav_action_btn">
               <img src="assets/images/pdf.svg" alt="PDF" />
               <span>Bank PDF</span>
+            </a>
+            <a href="#" class="btn nav_action_btn">
+              <span>Regenerate PDF</span>
             </a>
             <a href="#" class="btn edit_btn">Edit</a>
           </div>
@@ -173,7 +185,7 @@
                 </li>
               </ul>
 
-              <h6 class="sidebar-heading text-orange">Tools</h6>
+              <h6 class="sidebar-heading text-orange">Copy</h6>
               <hr />
               <ul class="nav flex-column" id="tools-nav">
                 <li class="nav-item">
@@ -209,7 +221,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#tools">
                     <img src="assets/images/local-library.svg" alt="" />
-                    <span>Tools</span>
+                    <span>Copy</span>
                   </a>
                 </li>
               </ul>
@@ -1028,7 +1040,7 @@
               <div class="col-md-5">
                 <div class="detail-card h-100" id="tools">
                   <div class="card p-24-32 h-100">
-                    <h6 class="text-uppercase fs-sm fw-bold">Tools</h6>
+                    <h6 class="text-uppercase fs-sm fw-bold">Copy</h6>
 
                     <hr class="mt-3 mb-4" />
 
@@ -1070,7 +1082,7 @@
                       <button class="btn btn-primary fs-sm">GO</button>
                     </label>
 
-                    <hr class="my-4 bg-light" />
+                    <!-- <hr class="my-4 bg-light" />
 
                     <div class="d-flex flex-column gap-4">
                       <label class="fs-sm text-gray fw-bold" for=""
@@ -1085,7 +1097,7 @@
                         <option value="1">Yes</option>
                         <option value="1">No</option>
                       </select>
-                    </div>
+                    </div> -->
 
                     <hr class="my-4 bg-light" />
 
@@ -1104,9 +1116,9 @@
                       </select>
                     </div>
 
-                    <div class="mt-4">
+                    <!-- <div class="mt-4">
                       <span class="fs-sm text-gray fw-bold">Status</span>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
