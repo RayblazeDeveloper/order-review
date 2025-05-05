@@ -666,9 +666,17 @@ header {
 }
 
 @media (min-width: 992px) {
+  .mt-36 {
+    margin-top: 36px;
+  }
+
   .address-detail-card.detail-card .row .col {
     max-width: 20% !important;
     flex: unset !important;
+  }
+
+  .address-detail-card.detail-card .row:last-child .col:last-child {
+    max-width: 40% !important;
   }
 
   .button_group_header {
@@ -679,6 +687,17 @@ header {
   }
   .address_header {
     min-width: 400px;
+  }
+
+  .detail-card input,
+  .detail-card select {
+    font-size: 16px;
+    min-height: 30px;
+  }
+  .detail-card .card .row p {
+    min-height: 32px;
+    display: flex;
+    align-items: center;
   }
 }
 

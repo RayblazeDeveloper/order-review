@@ -418,7 +418,7 @@
               </div>
             </div>
             <div
-              class="detail-card address-detail-card mt-5"
+              class="detail-card address-detail-card mt-36"
               id="address-details_edit"
             >
               <h3 class="main-heading">Edit Address Details</h3>
@@ -554,7 +554,7 @@
                 </div>
               </div>
             </div>
-            <div class="detail-card mt-5" id="property-details_edit">
+            <div class="detail-card mt-36" id="property-details_edit">
               <h3 class="main-heading">Edit Property Details</h3>
               <div class="card">
                 <div class="row">
@@ -654,6 +654,46 @@
                 </div>
               </div>
             </div>
+            <div class="detail-card mt-36" id="evaluation-details_edit">
+              <h3 class="main-heading">Edit Evaluation Details</h3>
+              <div class="card">
+                <div class="row">
+                  <div class="col">
+                    <h4>Purpose of Evaluation/Appraisal</h4>
+                    <select name="purpose-of-evaluation">
+                      <option value="">Select</option>
+                      <option value="Purchase">Purchase</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <h4>Unit of Measure</h4>
+                    <select name="unit-of-measure">
+                      <option value="">Unit</option>
+                      <option value="m">m</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <h4>Valuation Type</h4>
+                    <select name="valuation-type">
+                      <option value="">Select</option>
+                      <option value="As Is">As Is</option>
+                      <option value="As Stabilized">As Stabilized</option>
+                      <option value="As Completed">As Completed</option>
+                      <option value="As Completed & As Stabilized">
+                        As Completed & As Stabilized
+                      </option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <h4>Property Rights Evaluated</h4>
+                    <select name="property-rights-evaluated">
+                      <option value="">Select</option>
+                      <option value="Fee Simple">Fee Simple</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="spacer-36"></div>
 
@@ -684,6 +724,133 @@
                   <div class="col-6">
                     <h4>Include Remaining Economic Life - Building 1?</h4>
                     <p>2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-card mt-36" id="instructions_edit">
+              <h3 class="main-heading">Edit Instructions</h3>
+              <div class="card">
+                <div class="row">
+                  <div class="col">
+                    <h4>Was a Highest and Best Use analysis developed?</h4>
+                    <div class="align-items-center d-flex gap-5">
+                      <label
+                        for="highest-and-best-yes"
+                        class="align-items-center d-flex gap-2"
+                      >
+                        <input
+                          type="radio"
+                          name="highest-and-best"
+                          id="highest-and-best-yes"
+                        />
+                        <span>Yes</span>
+                      </label>
+
+                      <label
+                        for="highest-and-best-no"
+                        class="align-items-center d-flex gap-2"
+                      >
+                        <input
+                          type="radio"
+                          name="highest-and-best"
+                          id="highest-and-best-no"
+                        />
+                        <span>No</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <h4>
+                      Were any extraordinary assumptions applied in the
+                      appraisal?:
+                    </h4>
+                    <div class="align-items-center d-flex gap-5">
+                      <label
+                        for="highest-and-best-yes"
+                        class="align-items-center d-flex gap-2"
+                      >
+                        <input
+                          type="radio"
+                          name="highest-and-best"
+                          id="highest-and-best-yes"
+                        />
+                        <span>Yes</span>
+                      </label>
+
+                      <label
+                        for="highest-and-best-no"
+                        class="align-items-center d-flex gap-2"
+                      >
+                        <input
+                          type="radio"
+                          name="highest-and-best"
+                          id="highest-and-best-no"
+                        />
+                        <span>No</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col-6">
+                    <h4>Were Any Hypothetical Conditions Considered?</h4>
+                    <div class="align-items-center d-flex gap-5">
+                      <label
+                        for="highest-and-best-yes"
+                        class="align-items-center d-flex gap-2"
+                      >
+                        <input
+                          type="radio"
+                          name="highest-and-best"
+                          id="highest-and-best-yes"
+                        />
+                        <span>Yes</span>
+                      </label>
+
+                      <label
+                        for="highest-and-best-no"
+                        class="align-items-center d-flex gap-2"
+                      >
+                        <input
+                          type="radio"
+                          name="highest-and-best"
+                          id="highest-and-best-no"
+                        />
+                        <span>No</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <h4>Include Remaining Economic Life - Building 1?</h4>
+                    <div class="align-items-center d-flex gap-5">
+                      <label
+                        for="highest-and-best-yes"
+                        class="align-items-center d-flex gap-2"
+                      >
+                        <input
+                          type="radio"
+                          name="highest-and-best"
+                          id="highest-and-best-yes"
+                        />
+                        <span>Yes</span>
+                      </label>
+
+                      <label
+                        for="highest-and-best-no"
+                        class="align-items-center d-flex gap-2"
+                      >
+                        <input
+                          type="radio"
+                          name="highest-and-best"
+                          id="highest-and-best-no"
+                        />
+                        <span>No</span>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>

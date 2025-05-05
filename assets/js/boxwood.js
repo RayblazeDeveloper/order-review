@@ -104,6 +104,14 @@ $(function () {
       $editSections.show();
       $spacers.hide();
 
+      // 🔥 Force all inputs, selects, textareas, and labels to be block inside edit sections
+      $editSections
+        .find("input, select, textarea, label")
+        .css("display", "block");
+
+      // Optional: also show .d-flex and .form-check if you're using those wrappers
+      $editSections.find(".d-flex, .form-check").css("display", "flex");
+
       $(this).text("Save");
       isEditMode = true;
     } else {
