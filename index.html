@@ -113,7 +113,7 @@
             <a href="#" class="btn nav_action_btn">
               <span>Regenerate PDF</span>
             </a>
-            <a href="#" class="btn edit_btn">Edit</a>
+            <a href="#" id="edit_btn" class="btn edit_btn">Edit</a>
           </div>
         </div>
       </div>
@@ -308,6 +308,64 @@
                 </div>
               </div>
             </div>
+            <div class="detail-card" id="order-details_edit">
+              <h3 class="main-heading">Edit Order Details</h3>
+              <div class="card">
+                <div class="row">
+                  <div class="col">
+                    <h4>Boxwood Order No</h4>
+                    <input
+                      type="text"
+                      name="boxwood-order-number"
+                      value="Rhy_NC_28137_509623"
+                    />
+                  </div>
+                  <div class="col">
+                    <h4>Project No</h4>
+                    <input type="text" name="project-number" value="7626712" />
+                  </div>
+                  <div class="col">
+                    <h4>Dept Code</h4>
+                    <input type="text" name="dept-code" value="DT55" />
+                  </div>
+                  <div class="col">
+                    <h4>Client Company</h4>
+                    <input
+                      type="text"
+                      name="client-company"
+                      value="First Citizen Bank"
+                    />
+                  </div>
+                  <div class="col">
+                    <h4>Borrower Name</h4>
+                    <select name="borrower-name">
+                      <option value="">Select User</option>
+                      <option value="George Matt" selected>George Matt</option>
+                    </select>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col">
+                    <h4>Billing Code</h4>
+                    <input type="text" name="billing-code" />
+                  </div>
+                  <div class="col">
+                    <h4>Intended User</h4>
+                    <input
+                      type="text"
+                      name="intended-user"
+                      value="Boxwood Means"
+                    />
+                  </div>
+                  <div class="col"></div>
+                  <div class="col"></div>
+                  <div class="col"></div>
+                </div>
+              </div>
+            </div>
 
             <div class="spacer-36"></div>
 
@@ -355,6 +413,69 @@
                   <div class="col">
                     <h4>Address from Inspector</h4>
                     <p>1100 Lake Woodlands-test Order Spring, TX 77380</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="detail-card address-detail-card mt-5"
+              id="address-details_edit"
+            >
+              <h3 class="main-heading">Edit Address Details</h3>
+              <div class="card">
+                <div class="row">
+                  <div class="col">
+                    <h4>Property Name</h4>
+                    <input type="text" name="property-name" value="AP/3242" />
+                  </div>
+                  <div class="col">
+                    <h4>Street Address</h4>
+                    <input
+                      type="text"
+                      name="street-address"
+                      value="1100 Lake Woodlands"
+                    />
+                  </div>
+                  <div class="col">
+                    <h4>Street Address 2</h4>
+                    <input
+                      type="text"
+                      name="street-address-2"
+                      value="34th Avenue"
+                    />
+                  </div>
+                  <div class="col">
+                    <h4>Unit Number</h4>
+                    <input type="text" name="unit-number" value="34" />
+                  </div>
+                  <div class="col">
+                    <h4>City</h4>
+                    <input type="text" name="city" value="The Woodlands" />
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col">
+                    <h4>State</h4>
+                    <input type="text" name="state" value="North Carolina" />
+                  </div>
+                  <div class="col">
+                    <h4>County</h4>
+                    <input type="text" name="county" value="Woodlands" />
+                  </div>
+                  <div class="col">
+                    <h4>Zipcode</h4>
+                    <input type="text" name="zipcode" value="254333" />
+                  </div>
+                  <div class="col">
+                    <h4>Address from Inspector</h4>
+                    <input
+                      type="text"
+                      name="adress-from-inspector"
+                      value="1100 Lake Woodlands-test Order Spring, TX 77380"
+                    />
                   </div>
                 </div>
               </div>
@@ -427,6 +548,80 @@
                   <div class="col">
                     <h4>Days on Market</h4>
                     <p>254333</p>
+                  </div>
+                  <div class="col"></div>
+                  <div class="col"></div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-card mt-5" id="property-details_edit">
+              <h3 class="main-heading">Edit Property Details</h3>
+              <div class="card">
+                <div class="row">
+                  <div class="col">
+                    <h4>Gross Bldg SF From Client/To Inspector</h4>
+                    <input type="text" name="gross-bldg-sf" value="7000" />
+                  </div>
+                  <div class="col">
+                    <h4>Displayed on Report</h4>
+                    <input type="text" name="display-report" value="7000" />
+                  </div>
+                  <div class="col">
+                    <h4>No of Buildings From Client/To Inspector</h4>
+                    <input type="text" name="num-bldgs" value="939" />
+                  </div>
+                  <div class="col">
+                    <h4>Displayed on Report</h4>
+                    <input type="text" name="display-report" value="7000" />
+                  </div>
+                  <div class="col">
+                    <h4>Year Built</h4>
+                    <input type="text" name="year-built" value="1994" />
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col">
+                    <h4>Number of. Units</h4>
+                    <input type="text" name="num-units" value="2" />
+                  </div>
+                  <div class="col">
+                    <h4>No of Floors</h4>
+                    <input type="text" name="floors" value="2" />
+                  </div>
+                  <div class="col">
+                    <h4>Assessed Value</h4>
+                    <input type="text" name="assessed-value" value="254333" />
+                  </div>
+                  <div class="col">
+                    <h4>Lot Size</h4>
+                    <input type="text" name="lot-size" value="12000" />
+                  </div>
+                  <div class="col">
+                    <h4>Client Entered Zoning</h4>
+                    <select name="client-entering-zoning">
+                      <option value="">Select Option</option>
+                      <option value="Test Zone">Test Zone</option>
+                    </select>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                  <div class="col">
+                    <h4>Currently Listed for Sale</h4>
+                    <input type="text" name="floors" value="2" />
+                  </div>
+                  <div class="col">
+                    <h4>Listed Price</h4>
+                    <input type="text" name="floors" value="2" />
+                  </div>
+                  <div class="col">
+                    <h4>Days on Market</h4>
+                    <input type="text" name="floors" value="2" />
                   </div>
                   <div class="col"></div>
                   <div class="col"></div>
