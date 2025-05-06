@@ -238,9 +238,9 @@ header {
 .btn-toggle-container .btn-toggle > .btn-bg {
   border-radius: 100px;
 }
-.btn-toggle-container.checkin-checkout-toggle .btn-toggle > .btn-bg {
+/* .btn-toggle-container.checkin-checkout-toggle .btn-toggle > .btn-bg {
   border-radius: 100%;
-}
+} */
 
 .btn-toggle-container .checkbox {
   position: relative;
@@ -281,7 +281,7 @@ header {
   border-radius: 50%;
   transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
-.btn-toggle-container.checkin-checkout-toggle .btn-toggle .knob:after {
+/* .btn-toggle-container.checkin-checkout-toggle .btn-toggle .knob:after {
   content: "In";
   position: absolute;
   top: 50%;
@@ -290,39 +290,39 @@ header {
   color: #000;
   font-size: 14px;
   text-transform: uppercase;
-}
+} */
 
 .btn-toggle-container .btn-toggle .checkbox:checked + .knob:before {
   content: "";
   left: 30px;
   background-color: var(--bm-green);
 }
-.btn-toggle-container.checkin-checkout-toggle
+/* .btn-toggle-container.checkin-checkout-toggle
   .btn-toggle
   .checkbox:checked
   + .knob:before {
   content: "";
   left: 30px;
   background-color: #eeeeee;
-}
-.btn-toggle-container.checkin-checkout-toggle
+} */
+/* .btn-toggle-container.checkin-checkout-toggle
   .btn-toggle
   .checkbox:checked
   + .knob:after {
   content: "Out";
   right: 24px;
   color: #fff;
-}
+} */
 
 .btn-toggle-container .btn-toggle .checkbox:checked ~ .btn-bg {
   background-color: #62b2002b;
 }
-.btn-toggle-container.checkin-checkout-toggle
+/* .btn-toggle-container.checkin-checkout-toggle
   .btn-toggle
   .checkbox:checked
   ~ .btn-bg {
   background-color: var(--bm-green);
-}
+} */
 
 .btn-toggle-container .btn-toggle .knob,
 .btn-toggle-container .btn-toggle .knob:before,
