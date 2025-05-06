@@ -657,9 +657,12 @@ header {
 }
 
 .min-w-btn {
-  min-width: 170px;
+  min-width: 180px;
 }
 
+.min-w-btn .btn {
+  width: 100%;
+}
 /***********/
 .visible-row {
   width: 100%;
